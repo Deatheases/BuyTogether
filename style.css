@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    position: relative;
+    padding: 0px 200px 0px 200px;
+}
+
+body > div{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 110px;
+    background-color: black;
+    color: white;
+}
+
+header .hud{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 25px;
+}
+
+header .hud .category, .search, .orders, .whishlist, .cart, .profile{
+    flex-grow: 1;
+}
+
+header .hud .search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 4;
+}
+
+header .hud .search #search{
+    width: 750px;
+    height: 40px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+header .hud .search #search:active, #search:focus{
+    border: none;
+}
+
+header .hud .search svg{
+    position: absolute;
+    left: 5px;
+}
+
+.info-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: black;
+    height: 75px;
+    color: white;
+}
+
+.info-block div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lots-block{
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #2b303b;
+}
+
+.lots-block .lots-row{
+    position: relative;
+    display: flex;
+    height: 275px;
+}
+
+.lots-block .lots-row, .lots-banner{
+    flex-grow: 1;
+}
+
+.lots-block .lots-row .lot{
+    position: relative;
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #2b303b;
+}
+
+.lots-block .lots-banner{
+    height: 100px;
+}
+
+.lots-block .lots-row .lot .image-block{
+    position: relative;
+    display: flex;
+}
+
+.lots-block .lots-row .lot .image-block .image-main-preview{
+    flex-grow: 1;
+}
+
+.lots-block .lots-row .lot .image-block .image-main-preview img{
+    width: 150px;
+    height: 150px;
+}
+
+.lots-block .lots-row .lot .image-block .image-sub-preview{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.lots-block .lots-row .lot .image-block .image-sub-preview img{
+    width: 75px;
+    height: 75px;
+}
+
+.lots-block .lots-row .lot h1{
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.lots-block .lots-row .lot p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.lots-block .lots-row .lot p a{
+    color: red;
+    font-size: 32px;
+}
+
+.lots-block .lots-row .lot h2{
+    position: absolute;
+    font-size: 14px;
+    bottom: 5px;
+    right: 5px;
+    color: rgb(69, 150, 32);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+body > * {
+    flex-shrink: 0;
+}
+
+.lots-block{
+    flex-grow: 1;
+}
+
+footer{
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.lots-banner{
+    color: white;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
