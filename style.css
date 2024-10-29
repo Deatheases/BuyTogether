@@ -6,11 +6,19 @@
 body{
     position: relative;
     padding: 0px 200px 0px 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 body > div{
     width: 100%;
 }
+
+body > * {
+    flex-shrink: 0;
+}
+
+/*Header*/
 
 header{
     display: flex;
@@ -61,6 +69,8 @@ header .hud .search svg{
     left: 5px;
 }
 
+/*info block*/
+
 .info-block{
     position: relative;
     display: flex;
@@ -79,6 +89,8 @@ header .hud .search svg{
     justify-content: center;
 }
 
+/*lots block*/
+
 .lots-block{
     position: relative;
     display: flex;
@@ -86,6 +98,7 @@ header .hud .search svg{
     flex-direction: column;
     gap: 5px;
     background-color: #2b303b;
+    flex-grow: 1;
 }
 
 .lots-block .lots-row{
@@ -94,9 +107,17 @@ header .hud .search svg{
     height: 275px;
 }
 
-.lots-block .lots-row, .lots-banner{
+.lots-block .lots-banner{
+    color: white;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
+    height: 100px;
 }
+
+/*lot*/
 
 .lots-block .lots-row .lot{
     position: relative;
@@ -105,10 +126,6 @@ header .hud .search svg{
     display: flex;
     flex-direction: column;
     border: 3px solid #2b303b;
-}
-
-.lots-block .lots-banner{
-    height: 100px;
 }
 
 .lots-block .lots-row .lot .image-block{
@@ -138,6 +155,8 @@ header .hud .search svg{
     height: 75px;
 }
 
+/*lot fonts*/
+
 .lots-block .lots-row .lot h1{
     font-size: 22px;
     margin-top: 15px;
@@ -163,6 +182,8 @@ header .hud .search svg{
     color: rgb(69, 150, 32);
 }
 
+/*footer*/
+
 footer{
     display: flex;
     align-items: center;
@@ -170,34 +191,6 @@ footer{
     height: 100px;
     background-color: black;
     color: #fff;
-}
-
-html, body{
-    height: 100%;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-body > * {
-    flex-shrink: 0;
-}
-
-.lots-block{
-    flex-grow: 1;
-}
-
-footer{
     flex-shrink: 0;
     margin-top: 20px;
-}
-
-.lots-banner{
-    color: white;
-    font-size: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
