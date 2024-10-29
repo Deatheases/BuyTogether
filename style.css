@@ -24,8 +24,7 @@ header{
     display: flex;
     align-items: center;
     height: 110px;
-    background-color: black;
-    color: white;
+    color: black;
 }
 
 header .hud{
